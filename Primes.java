@@ -1,8 +1,8 @@
 public class Primes {
     public static void main(String[] args) {
         int n = Integer.parseInt(args[0]);
-        char v = args[1].charAt(0);
-        boolean verbose = v=='v';
+        // char v = args[1].charAt(0);
+        // boolean verbose = v=='v';
         int counter = 0;
         System.out.println("Prime numbers up to " + n + ":");
         // array initialization
@@ -17,9 +17,9 @@ public class Primes {
                 for (int j=2*i;j<=arr.length-1;j=j+i){
                     arr[j] = false;
                 }
-                if (verbose) {
+                // if (verbose) 
                     System.out.println(i);
-                }
+                
             }
         }
         // counting primes
